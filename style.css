@@ -1,0 +1,113 @@
+* {
+    font-family: Lexend;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#a8a8a8, #4e4e4e);
+    gap: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+#calculator {
+    display: grid;
+    height: 815px;
+    width: 500px;
+    border-radius: 5%;
+    background-color: hsl(0, 0%, 20%);
+    box-shadow: 0 40px 0 hsl(0, 0%, 13%);
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#calculator:hover {
+    scale: 1.05;
+}
+#pastDisplay:hover {
+    scale: 1.05
+}
+
+#calculator-btns {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    row-gap: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#display {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    height: 110px;
+    width: 410px;
+    border: 0;
+    background-color: hsl(0, 0%, 59%);
+    border-radius: 10%;
+    box-shadow: 0 -20px 0 hsl(0, 0%, 44%);
+    overflow: scroll;
+    padding-left: 20px;
+}
+
+button {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 0;
+    font-size: 3rem;
+    font-weight: bolder;
+    background-color: hsl(0, 0%, 47%);
+    box-shadow: 0 12px 0 hsl(0,0%,30%);
+
+    transition: all 0.1s ease-out;
+}
+
+button:hover {
+    box-shadow: 0 6px 0;
+    background-color: hsl(0, 0%, 42%);
+    transform: translateY(6px);
+}
+
+button:active {
+    box-shadow: 0 0 0;
+    background-color: hsl(0, 0%, 37%);
+    transform: translateY(12px);
+}
+
+.operator {
+    background-color: hsl(27, 100%, 59%); 
+    box-shadow: 0 12px 0 hsl(27,100%,30%);
+}
+
+.operator:hover {
+    background-color: hsl(27, 100%, 54%);
+}
+
+.operator:active {
+    background-color: hsl(27, 100%, 49%);
+}
+
+#pastDisplay {
+    background-color: hsl(0, 0%, 90%);
+    padding: 20px;
+    height: 700px;
+    width: 300px;
+    border-radius: 4%;
+    overflow: scroll;
+
+    transition: all 0.2s ease-in-out;
+}
